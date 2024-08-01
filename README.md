@@ -8,7 +8,7 @@
 Use the package manager [poetry](https://python-poetry.org/) to install `tf-sha256`.
 
 ```bash
-poetry add tf-sha256
+poetry install
 ```
 
 ## Usage
