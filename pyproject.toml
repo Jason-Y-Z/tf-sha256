@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tf-sha256"
+version = "0.1.0"
+description = "Compute SHA256 with TensorFlow"
+authors = ["JasonYZ <yurenzhang2017@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tf_sha256"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
