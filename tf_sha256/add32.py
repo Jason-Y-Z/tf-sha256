@@ -2,8 +2,8 @@
 
 import keras
 import tensorflow as tf
-from tf_sha256 import constants
 
+from tf_sha256 import constants
 
 BIT_WIDTH = 32
 _NO_CARRY = tf.where(tf.greater(tf.range(BIT_WIDTH), 0), 1.0, 0.0)

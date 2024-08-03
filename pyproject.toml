@@ -9,10 +9,13 @@ packages = [{include = "tf_sha256"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 tensorflow = "2.16.1"
+jsonlines = "^4.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.4.2"
+pytest = "^8.3.2"
+isort = "^5.13.2"
 
 [build-system]
 requires = ["poetry-core"]

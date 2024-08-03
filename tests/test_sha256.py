@@ -3,9 +3,9 @@ import hashlib
 import numpy as np
 import tensorflow as tf
 
+from tests import sha256
 from tf_sha256 import add32
 from tf_sha256 import sha256 as tf_sha256_
-from tests import sha256
 
 
 @tf.function()

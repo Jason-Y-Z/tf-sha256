@@ -18,6 +18,12 @@ Note I haven't published this package to Pypi since in my own experience, the co
 Please refer to the [unit tests](tests/test_sha256.py) for a more detailed usage of the library.
 Note this library has not been used in any production workload, despite reaching parity with non-tf implementation of SHA256 (as shown by the unit tests).
 
+### Bitcoin Mining
+
+A well-known use case for SHA256 is Bitcoin, so in [tf_btcminer](tf_btcminer/) we present a hypothetical use of this library in training a model to optimize the Bitcoin mining loss (which is based on the nonce and the coinbase value the model predict for a given block template). Again, you can find examples of the loss function in the tests directory. 
+
+To make sure it works, I have tried trainning a minimal ML model to optimize this loss (with 1 RTX 3060). So far, I haven't managed to accelerate the training enough to make meaningful progress. Therefore, I think there's still plenty of space for compute optimization, or a larger compute cluster is needed. 
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
