@@ -26,7 +26,7 @@ def _hex_to_bin(hex_str: str) -> str:
 
 
 def _bytes_to_bin(bytes_str: bytes) -> str:
-    return bin(int.from_bytes(bytes_str))[2:].zfill(len(bytes_str) * 8)
+    return bin(int.from_bytes(bytes_str, "big"))[2:].zfill(len(bytes_str) * 8)
 
 
 def test_tf_tx_compute_merkle_root():
